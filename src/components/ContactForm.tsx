@@ -212,15 +212,6 @@ const ContactForm = ({ className = "" }: ContactFormProps) => {
             github.com/pallav
           </a>
         </div>
-
-        <div className="mt-4 p-3 bg-muted/50 rounded-md">
-          <p className="text-xs text-muted-foreground">
-            💡 <strong>Note:</strong> To enable email notifications, you'll need
-            to set up EmailJS with your service credentials. Replace the
-            placeholder values in the code with your actual EmailJS Service ID,
-            Template ID, and Public Key.
-          </p>
-        </div>
       </div>
     </div>
   );
