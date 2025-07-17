@@ -165,7 +165,10 @@ const Home = () => {
               )}
             </Button>
             <Button
-              className="hidden lg:inline-flex text-xs md:text-sm px-2 md:px-4 py-1 md:py-2"
+              className={`hidden lg:inline-flex text-xs md:text-sm px-2 md:px-4 py-1 md:py-2
+                ${theme === 'dark' ? 'bg-gray-900 text-white hover:bg-gray-800' : 'bg-white text-gray-900 hover:bg-gray-200'}
+                border border-gray-700 dark:border-gray-600
+              `}
               onClick={() => {
                 const link = document.createElement("a");
                 link.href = "/Pallav_Debnath.pdf";
@@ -179,7 +182,10 @@ const Home = () => {
             </Button>
             <Button
               variant="outline"
-              className="lg:hidden text-xs px-2 py-1"
+              className={`lg:hidden text-xs px-2 py-1
+                ${theme === 'dark' ? 'bg-gray-900 text-white hover:bg-gray-800' : 'bg-white text-gray-900 hover:bg-gray-200'}
+                border border-gray-700 dark:border-gray-600
+              `}
               onClick={() => {
                 const link = document.createElement("a");
                 link.href = "/Pallav_Debnath.pdf";
@@ -479,7 +485,10 @@ const Home = () => {
       <div className="fixed bottom-20 md:bottom-6 right-4 md:right-6 lg:bottom-8 lg:right-8 z-40">
         <Button
           size="sm"
-          className="rounded-full shadow-lg text-xs md:text-sm px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3"
+          className={`rounded-full shadow-lg text-xs md:text-sm px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3
+            ${theme === 'dark' ? 'bg-gray-900 text-white hover:bg-gray-800' : 'bg-white text-gray-900 hover:bg-gray-200'}
+            border border-gray-700 dark:border-gray-600
+          `}
           onClick={() => {
             const link = document.createElement("a");
             link.href = "/Pallav_Debnath.pdf";
