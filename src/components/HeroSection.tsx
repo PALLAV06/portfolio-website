@@ -33,7 +33,7 @@ const HeroSection = ({
   ];
 
   return (
-    <section className="min-h-screen flex flex-col justify-center bg-gradient-to-br from-background via-background to-muted/20 text-foreground px-4 md:px-8 lg:px-16 py-16 relative overflow-hidden">
+    <section className="min-h-screen flex flex-col justify-center bg-gradient-to-br from-background via-background to-muted/20 text-foreground px-4 md:px-8 lg:px-16 py-16 pb-24 md:pb-16 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
@@ -214,7 +214,14 @@ const HeroSection = ({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center z-10"
+        className="hidden sm:flex absolute bottom-8 left-1/2 transform -translate-x-1/2 flex-col items-center z-10"
+        onClick={() => {
+          const aboutSection = document.getElementById('about');
+          if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }}
+        style={{ cursor: 'pointer' }}
       >
         <span className="text-sm text-muted-foreground mb-2 font-medium">
           Scroll for more

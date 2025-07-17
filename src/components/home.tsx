@@ -476,7 +476,7 @@ const Home = () => {
       </footer>
 
       {/* Floating CTA */}
-      <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 lg:bottom-8 lg:right-8 z-40">
+      <div className="fixed bottom-20 md:bottom-6 right-4 md:right-6 lg:bottom-8 lg:right-8 z-40">
         <Button
           size="sm"
           className="rounded-full shadow-lg text-xs md:text-sm px-3 py-2 md:px-4 md:py-2 lg:px-6 lg:py-3"
