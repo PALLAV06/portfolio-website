@@ -76,6 +76,21 @@ const Home = () => {
       image:
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
     },
+    {
+      title: "Azure CIDR Agent",
+      description:
+        "Interactive dashboard for complete visibility and control over Azure network IP address space",
+      technologies: [
+        "Python",
+        "Streamlit",
+        "Azure SDK",
+        "Docker",
+        "GitHub Actions",
+      ],
+      metrics: "Identifies unused VNets & suggests optimal CIDR blocks",
+      image:
+        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80",
+    },    
   ];
 
   // Certifications data
