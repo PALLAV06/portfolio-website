@@ -203,7 +203,7 @@ const ContactForm = ({ className = "" }: ContactFormProps) => {
             linkedin.com/in/pallavdebnath
           </a>
           <a
-            href="https://github.com/pallav"
+            href="https://github.com/PALLAV06"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm text-card-foreground hover:text-primary transition-colors duration-200 p-2 rounded-md hover:bg-accent"
